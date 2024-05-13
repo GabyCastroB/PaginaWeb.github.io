@@ -1,0 +1,132 @@
+<!doctype html>
+<!-- Ejercicco de pagina web en html con navegación interna
+realizado por Gabriela Maria Castro Beltran de la Universidad Nacional de Colombia-->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta lang="es"><!-- Idioma español-->
+    <title>Referencias</title> <!--Título-->
+    <link href="estilo.css" rel="stylesheet"> <!-- se vincula con el estilo css-->
+    <link rel="stylesheet" type="text/css" href="estilo2.css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+    <script src="acciones.js"></script>
+</head>
+<body>
+   <header class="claro">
+    <input type="checkbox" id="btn-menu"><!-- checkbox permite la opción boleana ---> 
+     <label for="btn-menu"><img src="imagenes/menu.png" width="30px"></label>
+    <!-- la imagen del ícono se muestra como label del checkbox pero se oculta cuando no se necesita -->
+    <nav class="menu"><!-- menu de navegación o conjunto de botones --> 
+        <ul>
+        <li class="item"><a class="botonMenu" href="index.html" target="_self">Inicio</a></li>
+        <li class="item"><a class="botonMenu"href="Intro.html" target="_self">Introducción</a></li>
+        <li class="item"><a class="botonMenu" href="Historia.html" target="_self">Historia</a>
+             <ul>
+                <li class="item2"><a  href="Historia.html" target="_self">Inicios</a></li>
+                <li class="item2"><a  href="Historia.html" target="_self">Heian</a></li>
+                <li class="item2"><a  href="Historia.html" target="_self">Edad media</a></li>
+                <li class="item2" ><a  href="Historia.html" target="_self">Muromachi</a></li>
+                <li class="item2"><a  href="Historia.html" target="_self">Meji</a></li>
+                <li class="item2"><a  href="Historia.html" target="_self">Siglo XX</a></li>
+            </ul>
+        </li>
+        <li class="item"><a class="botonMenu" href="Personajes.html" target="_self">Personajes</a>
+            <ul>
+                <li class="item2"><a  href="Personajes.html" target="_self">Príncipe Shōtoku</a></li>
+                <li class="item2"><a  href="Personajes.html" target="_self">Oda Nobunaga</a></li>
+                <li class="item2"><a  href="Personajes.html" target="_self">Toyotomi Hideyoshi</a></li>
+                <li class="item2"><a  href="Personajes.html" target="_self">Murasaki Shikibu</a></li>
+            </ul>
+        </li>
+        <li class="item"><a class="botonMenu" href="Actividades.html" target="_self">Actividades</a>
+            <ul>
+                <li class="item2"><a  href="Actividades.html" target="_self">Ryokan</a></li>
+                <li class="item2"><a  href="Actividades.html" target="_self">Onsen</a></li>
+                <li class="item2"><a  href="Actividades.html" target="_self">Shukubo</a></li>
+                <li class="item2"><a  href="Actividades.html" target="_self">Geishas</a></li>
+            </ul>
+        </li> 
+        <li class="item"><a class="botonMenu" href="Ubicacion.html" target="_self">Ubicación</a>
+            <ul>
+                <li class="item2"><a  href="Ubicacion.html" target="_self">Geografía</a></li>
+                <li class="item2"><a  href="Ubicacion.html" target="_self">Volcanes y terremotos</a></li>
+                <li class="item2"><a  href="Ubicacion.html" target="_self">Clima</a></li>
+               </ul></li>
+        <li class="item"><a class="botonMenu" href="mapa.html" target="_self">Mapa</a> </li>
+        <li class="item"><a class="botonMenu" href="Referencias.html" target="_self">Referencias</a> </li>
+    </ul>
+    </nav>
+    <div class="portada">
+        <h1 id="titulo">Referencias</h1>
+    </div>
+    <!--Utiliza un elemento SVG para crear un efecto de onda en la parte inferior del encabezado.-->
+    <div class="estilo_onda"   style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: hsla(250, 0%, 100%,0.4);"></path></svg></div>
+    </header>
+    <div class="Caja_Mod_osc">
+        <span id="boton_os" class="btn-modo-oscuro" onclick="cambiar()"></span>
+    </div>
+        <div class="contenido"> 
+        <div class="texto">
+        
+            <h2>Fuente imagenes</h2>
+            
+             <ul class="texto"><!-- indica una lista en esta celda-->
+                <br>
+                <li><a target=”_blank” href="https://depositphotos.com/es/photo/okinawa-landscape-23359578.html">Okinawa</a> </li> 
+                <li><a target=”_blank” href=" https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.invertour.com.mx%2Fwp-content%2Fuploads%2F2020%2F12%2Fjapon-invierno-.jpg&tbnid=vHV1Iy5BSoaskM&vet=12ahUKEwiL8KPDxcWEAxXgFWIAHdAgB7QQMygHegQIARBo..i&imgrefurl=https%3A%2F%2Fwww.invertour.com.mx%2Fjapon-en-invierno-es-imperdible%2F&docid=beqEyfz-qze_6M&w=1200&h=798&q=invierno%20en%20japon&hl=es&ved=2ahUKEwiL8KPDxcWEAxXgFWIAHdAgB7QQMygHegQIARBo">Japón en invierno</a> </li>
+                <li><a target=”_blank” href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.debate.com.mx%2F__export%2F1656963356002%2Fsites%2Fdebate%2Fimg%2F2022%2F07%2F04%2Fbandera_de_japon-_qux_significa-_colores_1.jpg_554688468.jpg&tbnid=efrdfcx44WiIlM&vet=12ahUKEwiLqIr4zMWEAxUUEWIAHfi1AkEQMygFegQIARB8..i&imgrefurl=https%3A%2F%2Fwww.debate.com.mx%2Fviral%2FBandera-de-Japon-que-significan-sus-colores-y-el-circulo-rojo-20220704-0210.html&docid=pIvtRq3hivtv1M&w=1200&h=675&q=bandera%20japon&hl=es&ved=2ahUKEwiLqIr4zMWEAxUUEWIAHfi1AkEQMygFegQIARB8">Bandera de Japón</a></li>
+                <li><a target=”_blank” href=" https://www.google.com/imgres?imgurl=https%3A%2F%2Fdam.ngenespanol.com%2Fwp-content%2Fuploads%2F2021%2F06%2F000_9CW9U6.jpg&tbnid=QZSJrpYHNehq1M&vet=12ahUKEwjoo8agzcWEAxVMhLAFHZR2DbkQMygAegQIARBG..i&imgrefurl=https%3A%2F%2Fwww.ngenespanol.com%2Fanimales%2Fel-zoologico-mas-antiguo-de-japon-celebra-el-nacimiento-de-dos-nuevas-crias-de-panda%2F&docid=GRmgZPaMiF3GrM&w=512&h=341&q=japon%20panda&hl=es&ved=2ahUKEwjoo8agzcWEAxVMhLAFHZR2DbkQMygAegQIARBG">Panda</a></li>
+                <li><a target=”_blank” href="https://facts.net/ramen-facts/">Ramen</a></li>
+                <li><a target=”_blank” href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.civitatis.com%2Fblog%2Fwp-content%2Fuploads%2F2022%2F11%2Fcalle-akihabara-tokio.jpg&tbnid=IW-GVpxkAn44IM&vet=12ahUKEwibs4CazsWEAxX_K2IAHePKATIQMygBegQIARB0..i&imgrefurl=https%3A%2F%2Fwww.civitatis.com%2Fblog%2Factividades-curiosas-tokio%2F&docid=-v1M8PCDxsyBQM&w=1900&h=1268&q=tokio&hl=es&ved=2ahUKEwibs4CazsWEAxX_K2IAHePKATIQMygBegQIARB0">Tokio</a></li>
+                <li><a target=”_blank” href="https://japon-secreto.com/evento/festival-de-las-linternas-de-nagasaki/">Festivales</a></li>
+                <li><a target=”_blank” href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.sugoijapan.net%2Fes%2Fviajar-a-japon%2Fla-magia-del-sakura-la-temporada-de-los-cerezos-en-flor-en-japon%2F&psig=AOvVaw1scamp6_SVqPOWg4-WFkQd&ust=1708920429216000&source=images&cd=vfe&opi=89978449&ved=0CBAQjRxqFwoTCODjo_POxYQDFQAAAAAdAAAAABAK">Sakura</a></li>
+                <li><a target=”_blank” href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.ecured.cu%2Fimages%2F4%2F42%2FTaishi-Shotoku.jpg&tbnid=DpeWHu_RtXzDJM&vet=12ahUKEwiQ042cz8WEAxWfmrAFHavaDAkQMygEegQIARBK..i&imgrefurl=https%3A%2F%2Fwww.ecured.cu%2FTaishi-Shotoku&docid=B5Vx3OrDoQQ8jM&w=250&h=250&q=Sh%C5%8Dtoku&hl=es&ved=2ahUKEwiQ042cz8WEAxWfmrAFHavaDAkQMygEegQIARBK">Shotoku</a></li>
+                <li><a target=”_blank” href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fsenderosdelahistoria.files.wordpress.com%2F2007%2F07%2Fnobunaga.jpg%3Fw%3D897&tbnid=7gHj0G29N6xWwM&vet=12ahUKEwjd_MGuz8WEAxXCuIQIHQESALoQMygDegQIARBL..i&imgrefurl=https%3A%2F%2Fsenderosdelahistoria.wordpress.com%2F2007%2F07%2F13%2Foda-nobunaga%2F&docid=SnnWh24oUsOhFM&w=897&h=1024&q=oda%20nobunaga&hl=es&ved=2ahUKEwjd_MGuz8WEAxXCuIQIHQESALoQMygDegQIARBL">Oda</a></li>
+                <li><a target=”_blank” href="https://www.google.com/imgres?imgurl=https%3A%2F%2Ffishh.museuegipci.com%2Ffiles%2Fimg%2Fsmall%2Ftoyotomi-hideyoshi-187.jpg&tbnid=6SEVpHnelFwQBM&vet=12ahUKEwij57G-z8WEAxUXobAFHUbYALwQMygLegQIARBb..i&imgrefurl=https%3A%2F%2Fwww.museuegipci.com%2Fes%2Fcursos-y-actividades%2Ftoyotomi-hideyoshi-el-japones-mes-poderos-de-la-historia%2F&docid=NX24uQrKZjngNM&w=700&h=494&q=Toyotomi%20Hideyoshi&hl=es&ved=2ahUKEwij57G-z8WEAxUXobAFHUbYALwQMygLegQIARBb">Totoyotomi</a></li>
+                <li><a target=”_blank” href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F4%2F4c%2FSakamoto_Ryoma.jpg&tbnid=sJPEtsNsSdD_mM&vet=12ahUKEwi-pIfOz8WEAxVbobAFHVG_DpAQMygAegQIARBC..i&imgrefurl=https%3A%2F%2Fes.wikipedia.org%2Fwiki%2FSakamoto_Ry%25C5%258Dma&docid=rKc6Dnjda7GExM&w=1024&h=1312&q=Sakamoto%20Ry%C5%8Dma&hl=es&ved=2ahUKEwi-pIfOz8WEAxVbobAFHVG_DpAQMygAegQIARBC">Sakamoto</a></li>
+                <li><a target=”_blank” href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn.domestika.org%2Fc_fill%2Cdpr_auto%2Cf_auto%2Ch_1200%2Cpg_1%2Ct_base_params%2Cw_1200%2Fv1636715172%2Fblog-post-covers%2F000%2F009%2F326%2F9326-original.jpg%3F1636715172&tbnid=OXNJVSSuT5MaGM&vet=12ahUKEwj6nqraz8WEAxW3m7AFHe01C04QMygBegQIARBK..i&imgrefurl=https%3A%2F%2Fwww.domestika.org%2Fes%2Fblog%2F9326-murasaki-shikibu-la-mujer-que-escribio-la-primer-novela-en-el-mundo&docid=VNq36Z348JWPXM&w=1200&h=1200&q=Murasaki%20Shikibu&hl=es&ved=2ahUKEwj6nqraz8WEAxW3m7AFHe01C04QMygBegQIARBK">Murasaki</a></li>
+                 
+                <li><a target=”_blank” href="https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.guim.co.uk%2Fimg%2Fmedia%2F1802fba213a427cec62322a2630fe3557ecd75f2%2F0_199_5216_3129%2Fmaster%2F5216.jpg%3Fwidth%3D1200%26height%3D900%26quality%3D85%26auto%3Dformat%26fit%3Dcrop%26s%3Df5e0eea7d5d5b868c57046b4f94ecd6a&tbnid=brTr0de83IePXM&vet=12ahUKEwjOhvKI4saEAxWzI2IAHXr1AkoQMygHegQIARBe..i&imgrefurl=https%3A%2F%2Fwww.theguardian.com%2Ftravel%2Fshortcuts%2F2017%2Fdec%2F10%2Fthe-ryokan-the-ancient-japanese-inn-that-is-the-next-big-airbnb-thing&docid=GTZxp0rlLwMMdM&w=1200&h=900&q=ryokan&ved=2ahUKEwjOhvKI4saEAxWzI2IAHXr1AkoQMygHegQIARBe">Ryokan</a></li>
+                 
+                <li><a target=”_blank” href="https://tokyocheapo.com/entertainment/how-to-onsen-in-japan/">Onsen</a></li>
+                <li><a target=”_blank” href="https://www.japan.travel/es/spot/60/">Shukubo</a></li>
+                <li><a target=”_blank” href="https://voyapon.com/es/matsuri-japon/">Matsuri</a></li>
+                <li><a target=”_blank” href="https://japonismo.com/blog/la-maiko-o-aprendiza-de-geisha">Geishas</a></li>
+                </ul> 
+
+            <h2>Fuentes de información</h2>
+            
+                    <ul class="texto"><!-- indica una lista en esta celda-->
+                    <br>
+                    <li>Embajada de Japón en España.Información sobre el Territorio Japonés. Recuperado de <a target=”_blank” href="https://www.es.emb-japan.go.jp/politicaexterior/territory/data.html">Embajada de Japón en España</a></li> 
+                    <li>Humanidades.com. Japón. Recuperado de <a target=”_blank” href="https://humanidades.com/japon/"> humanidades</a></li>
+                    <li>Conoce Japón. Japón. Recuperado de <a target=”_blank” href="http://www.conocejapon.com/japon/">Conoce a Japón</a></li>
+                    </ul> 
+                    <br>
+            <h2>Fuentes de los videos y audios</h2>
+            
+                    <ul class="texto"><!-- indica una lista en esta celda-->
+                    <br>
+                    <li> Música Tradicional Japonesa - Tsugaru Shamisen. Recuperado de <a target=”_blank” href="https://www.youtube.com/watch?v=dwetYHikgNE&ab_channel=P%C3%A1ssaroTrov%C3%A3o-SonsAncestrais">Música Tradicional Japonesa - Tsugaru Shamisen</a></li> 
+                    <li>Probando comida callejera en Jaón con un japonés. Recuperado de <a target=”_blank” href="https://www.youtube.com/watch?v=_Njj1dRLN4o&ab_channel=JDalmau"> Probando comida callejera en Japón con un japones</a></li>
+                    <li>Historia de Japón - Resumen | Desde sus orígenes hasta la restauración Meiji. Recuperado de <a target=”_blank” href="https://www.youtube.com/watch?v=yjUTspf40aM&ab_channel=CuadernodeHistoria">Historia de Japón</a></li>
+                    <li>¿Como era la vida de una Geisha?. Recuperado de <a target=”_blank” href="https://www.youtube.com/watch?v=U4xPQUOEDBU&ab_channel=MundoMaravilla">Vida de una Geisha</a></li>
+                    </ul> 
+                    <br>
+                <h2>Fuente de la imagen del ícono de modo oscuro</h2>
+                <li> Icono diseñado por <a href="https://www.flaticon.es/autores/freepik" title="Freepik"> Freepik </a> from <a href="https://www.flaticon.es/" title="Flaticon">www.flaticon.es'</a></li>
+
+                <h2>Fuente de información para el mapa e inspiración</h2>
+                <li> Mapa de Japón. Recuperado de <a target=”_blank” href="https://es.japantravel.com/nagasaki/reino-de-flores-y-luces/26075">JapanTravel</a></li> 
+                    <div>
+                    <footer class="claro"> <!--Pie de página-->
+                        <p>&copy; 2024 Gabriela Maria Castro Beltrán. Todos los derechos reservados.</p>
+                        <nav> <!--Franja de navegación-->
+                            <div class="Inicio"> <a class="Inicio" href="index.html" target="_self">Volver a la página de inicio </a> <!-- vínculo a la parte superior de la página --></div>
+                        </nav>
+                    </footer>
+                </div>  
+            </div>
+        </div>
+    </body>
+</html>
