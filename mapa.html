@@ -1,0 +1,115 @@
+<!doctype html>
+<!-- Ejercicco de pagina web en html con navegación interna
+realizado por Gabriela Maria Castro Beltran de la Universidad Nacional de Colombia-->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta lang="es"><!-- Idioma español-->
+    <title>Introducción</title> <!--Título-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <link href="estilo.css" rel="stylesheet"> <!-- se vincula con el estilo css-->
+    <link rel="stylesheet" type="text/css" href="estilo2.css" media="all"><!-- se vincula con el estilo css-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> <!-- Importa la fuente Open Sans desde Google Fonts -->
+    <!-- Vincula los estilos de Leaflet.MarkerCluster -->
+    <link rel="stylesheet" href="Leaflet.markercluster-1.4.1\dist\MarkerCluster.css">
+    <link rel="stylesheet" href="Leaflet.markercluster-1.4.1\dist\MarkerCluster.Default.css">
+    <!-- Establece la escala inicial del contenido para dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximumscale=1.0, user-scalable=no" />
+
+</head>
+    <body >
+        <!--Crea un anclaje (marca) en un punto específico de la página con el nombre "inicio_intro." Esto puede ser utilizado para enlazar directamente a esta ubicación en la página.-->
+        <a name="inicio_intro"></a><!-- crea una marca en un punto de la página -->
+        <header class="claro">
+        <input type="checkbox" id="btn-menu"><!-- checkbox permite la opción boleana --> 
+         <label for="btn-menu"><img src="imagenes/menu.png" width="30px"></label>
+        <!-- la imagen del ícono se muestra como label del checkbox pero se oculta cuando no se necesita -->
+        <nav class="menu"><!-- menu de navegación o conjunto de botones --> 
+            <ul>
+            <li class="item"><a class="botonMenu" href="index.html" target="_self">Inicio</a></li>
+            <li class="item"><a class="botonMenu"href="Intro.html" target="_self">Introducción</a></li>
+            <li class="item"><a class="botonMenu" href="Historia.html" target="_self">Historia</a>
+                 <ul>
+                    <li class="item2"><a  href="Historia.html#inicios" target="_self">Los inicios</a></li>
+                    <li class="item2"><a  href="Historia.html#heian" target="_self">Heian</a></li>
+                    <li class="item2"><a  href="Historia.html#media" target="_self">Edad media</a></li>
+                    <li class="item2" ><a  href="Historia.html#muromachi" target="_self">Muromachi</a></li>
+                    <li class="item2"><a  href="Historia.html#meji" target="_self">Meji</a></li>
+                    <li class="item2"><a  href="Historia.html#sigloxx" target="_self">Siglo XX</a></li>
+                </ul>
+            </li>
+            <li class="item"><a class="botonMenu" href="Personajes.html" target="_self">Personajes</a>
+                <ul>
+                    <li class="item2"><a  href="Personajes.html#principe"  target="_self">Príncipe Shōtoku</a></li>
+                    <li class="item2"><a  href="Personajes.html#inicio_oda" target="_self">Oda Nobunaga</a></li>
+                    <li class="item2"><a  href="Personajes.html#inicio_toyotomi" target="_self">Toyotomi Hideyoshi</a></li>
+                    <li class="item2"><a  href="Personajes.html#inicio_murasaki" target="_self">Murasaki Shikibu</a></li>
+                </ul>
+            </li>
+            <li class="item"><a class="botonMenu" href="Actividades.html" target="_self">Actividades</a>
+                <ul>
+                    <li class="item2"><a  href="Actividades.html#ryokan" target="_self">Ryokan</a></li>
+                    <li class="item2"><a  href="Actividades.html#onsen" target="_self">Onsen</a></li>
+                    <li class="item2"><a  href="Actividades.html#shukubo" target="_self">Shukubo</a></li>
+                    <li class="item2"><a  href="Actividades.html#geishas" target="_self">Geishas</a></li>
+                </ul>
+            </li> 
+            <li class="item"><a class="botonMenu" href="Ubicacion.html" target="_self">Ubicación</a>
+                <ul>
+                    <li class="item2"><a  href="Ubicacion.html#geografia" target="_self">Geografía</a></li>
+                    <li class="item2"><a  href="Ubicacion.html#volcanes" target="_self">Volcanes y terremotos</a></li>
+                    <li class="item2"><a  href="Ubicacion.html#clima" target="_self">Clima</a></li>
+                   </ul></li>
+            <li class="item"><a class="botonMenu" href="mapa.html" target="_self">Mapa</a> </li>
+            <li class="item"><a class="botonMenu" href="Referencias.html" target="_self">Referencias</a> </li>
+        </ul>
+        </nav>
+        <div class="portada">
+             <h1 id="titulo"> Mapa de Japón</h1><!-- titular de mayor tamaño y caracter especial de corazón-->
+        </div>
+        <div class="estilo_onda"   style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: hsla(250, 0%, 100%,0.4);"></path></svg></div>
+        </header>
+        <!-- Botón para cambiar el modo de oscuro a claro -->
+        <div class="Caja_Mod_osc">
+            <span id="boton_os" class="btn-modo-oscuro" onclick="cambiar()"></span>
+        </div>
+        <div class="contenido_mapa">
+            <!-- Selector de ubicaciones -->
+            <select name="select-location" id="select-location">
+                <option value="-1">Seleccione una ubicación</option>
+                <option value="35.76753298822823, 139.68147197966024, 13">Escaleras de kimi no namae</option>
+                <option value="35.65878968594849, 139.74542216746855, 13">Torre de Tokyo</option>
+                <option value="34.69710904056838, 135.51189327220018, 13">Osaka Tenmangu</option>
+                <option value="33.087563287781734, 129.78768510133492, 13">Reino de flores y luces</option>
+                <option value="35.36226740649407, 138.7269486637615, 13">Monte Fuji</option>
+                <option value="34.61786815638933, 135.02140554122056, 13">Gran Puente del Estrecho de Akashi</option>
+                <option value="35.1849605203007, 136.89976339813055, 13">Castillo de Nagoya</option>
+                <option value="43.061556766858715, 141.35652020321126, 13">Torre de Sapporo</option>
+                <option value="35.45090796179662, 139.64628260407497, 13">Puerto de Yokohama</option>
+                <option value="34.6851969509059, 135.84293689441364, 13">Parque Nara</option>
+                <option value="34.6874511568429, 135.52580095208452, 13">Castillo Osaka</option>
+                <option value="34.39563347364136, 132.4535383520719, 13">Cúpula de la Bomba Atómica, Hiroshima</option>
+                <option value="35.0396071490225, 135.7292752827826, 13">Pabellon Dorado</option>
+                <option value="34.967236298491976, 135.77457366559048, 13">Mil Tori</option>
+                <option value="40.61154519354034, 140.46369667817154, 13">Castillo Hirosaki</option>
+                <option value="38.30062595162261, 141.41831140261715, 13">Isla de gatos salvajes</option>
+                <option value="38.04092221887822, 140.53030675223533, 13">Zao Fox Village</option>
+                <option value="35.76753298822823, 139.68147197966024, 6">Atrás</option>
+
+            </select>
+            <!-- Contenedor del mapa -->
+            <div id = 'map'>
+		    </div>
+        </div>
+        <!-- Scripts de Leaflet y Leaflet.MarkerCluster -->
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+         integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+        crossorigin=""></script>
+        <script src="Leaflet.markercluster-1.4.1\dist\leaflet.markercluster-src.js"></script>
+        <script src="Leaflet.markercluster-1.4.1\src\MarkerCluster.js"></script>
+        <script src="acciones.js"></script>
+        
+    </body>
+</html>

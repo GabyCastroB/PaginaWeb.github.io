@@ -1,0 +1,102 @@
+<!doctype html>
+<!-- Ejercicco de pagina web en html con navegación interna
+realizado por Gabriela Maria Castro Beltran de la Universidad Nacional de Colombia-->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta lang="es"><!-- Idioma español-->
+    <title>Introducción</title> <!--Título-->
+    <link href="estilo.css" rel="stylesheet"> <!-- se vincula con el estilo css-->
+    <link rel="stylesheet" type="text/css" href="estilo2.css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+    <script src="acciones.js"></script>
+</head>
+    <body >
+        <!--Crea un anclaje (marca) en un punto específico de la página con el nombre "inicio_intro." Esto puede ser utilizado para enlazar directamente a esta ubicación en la página.-->
+        <a name="inicio_intro"></a><!-- crea una marca en un punto de la página -->
+        <header class="claro">
+        <input type="checkbox" id="btn-menu"><!-- checkbox permite la opción boleana --> 
+         <label for="btn-menu"><img src="imagenes/menu.png" width="30px"></label>
+        <!-- la imagen del ícono se muestra como label del checkbox pero se oculta cuando no se necesita -->
+        <nav class="menu"><!-- menu de navegación o conjunto de botones --> 
+            <ul>
+            <li class="item"><a class="botonMenu" href="index.html" target="_self">Inicio</a></li>
+            <li class="item"><a class="botonMenu"href="Intro.html" target="_self">Introducción</a></li>
+            <li class="item"><a class="botonMenu" href="Historia.html" target="_self">Historia</a>
+                 <ul>
+                    <li class="item2"><a  href="Historia.html#inicios" target="_self">Los inicios</a></li>
+                    <li class="item2"><a  href="Historia.html#heian" target="_self">Heian</a></li>
+                    <li class="item2"><a  href="Historia.html#media" target="_self">Edad media</a></li>
+                    <li class="item2" ><a  href="Historia.html#muromachi" target="_self">Muromachi</a></li>
+                    <li class="item2"><a  href="Historia.html#meji" target="_self">Meji</a></li>
+                    <li class="item2"><a  href="Historia.html#sigloxx" target="_self">Siglo XX</a></li>
+                </ul>
+            </li>
+            <li class="item"><a class="botonMenu" href="Personajes.html" target="_self">Personajes</a>
+                <ul>
+                    <li class="item2"><a  href="Personajes.html#principe"  target="_self">Príncipe Shōtoku</a></li>
+                    <li class="item2"><a  href="Personajes.html#inicio_oda" target="_self">Oda Nobunaga</a></li>
+                    <li class="item2"><a  href="Personajes.html#inicio_toyotomi" target="_self">Toyotomi Hideyoshi</a></li>
+                    <li class="item2"><a  href="Personajes.html#inicio_murasaki" target="_self">Murasaki Shikibu</a></li>
+                </ul>
+            </li>
+            <li class="item"><a class="botonMenu" href="Actividades.html" target="_self">Actividades</a>
+                <ul>
+                    <li class="item2"><a  href="Actividades.html#ryokan" target="_self">Ryokan</a></li>
+                    <li class="item2"><a  href="Actividades.html#onsen" target="_self">Onsen</a></li>
+                    <li class="item2"><a  href="Actividades.html#shukubo" target="_self">Shukubo</a></li>
+                    <li class="item2"><a  href="Actividades.html#geishas" target="_self">Geishas</a></li>
+                </ul>
+            </li> 
+            <li class="item"><a class="botonMenu" href="Ubicacion.html" target="_self">Ubicación</a>
+                <ul>
+                    <li class="item2"><a  href="Ubicacion.html#geografia" target="_self">Geografía</a></li>
+                    <li class="item2"><a  href="Ubicacion.html#volcanes" target="_self">Volcanes y terremotos</a></li>
+                    <li class="item2"><a  href="Ubicacion.html#clima" target="_self">Clima</a></li>
+                   </ul></li>
+            <li class="item"><a class="botonMenu" href="mapa.html" target="_self">Mapa</a> </li>
+            <li class="item"><a class="botonMenu" href="Referencias.html" target="_self">Referencias</a> </li>
+        </ul>
+        </nav>
+        <div class="portada">
+             <h1 id="titulo"> Introducción</h1><!-- titular de mayor tamaño y caracter especial de corazón-->
+        </div>
+        <div class="estilo_onda"   style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: hsla(250, 0%, 100%,0.4);"></path></svg></div>
+        </header>
+        <div class="Caja_Mod_osc">
+            <span id="boton_os" class="btn-modo-oscuro" onclick="cambiar()"></span>
+        </div>
+        <!--Contiene un div con la clase "texto_cajita_rosa" que a su vez contiene un párrafo de texto, imágenes y un enlace de regreso.-->
+        <div class="contenido"> 
+            <!--Contiene un div con la clase "texto_cajita_rosa" que a su vez contiene un párrafo de texto, imágenes y un enlace de regreso.-->
+        <div id="cajita" class="texto_cajita_rosa">
+            <br>   
+            <video src="imagenes/Comida-japon.mp4" type="video/mp4" width="680" controls autoplay preload="auto"></video><!-- Reproductor de video con controles básicos que reproduce automáticamente el video -->
+            <br>
+            <img class="texto_img" src="Imagenes/bandera.jpg" alt="Bandera de Japón"/>
+            <p class="texto">Japón constituye un país ubicado en el este de Asia, formado por un extenso archipiélago que se encuentra entre el océano Pacífico y el mar del Japón, al este de China, Rusia y la península coreana. Principalmente conformado por las islas de Honshū, Hokkaidō, Kyūshū y Shikoku, estas representan el 97 % de la superficie total del país.</p>
+            <br>
+            <img class="texto_img" src="Imagenes/tokio.png" alt="Imagen de la ciudad de Tokio"/> <p class="texto">A pesar de su tamaño geográfico comparativamente pequeño en relación con naciones como Rusia o Estados Unidos, Japón se destaca como uno de los países más densamente poblados del mundo, albergando aproximadamente a 128 millones de personas. Su capital, Tokio, es la área urbana más grande globalmente en términos de población, con más de 30 millones de habitantes. Actualmente, Japón sobresale como líder en cobertura tecnológica y figura como la tercera potencia económica a nivel mundial, siendo superado únicamente por China y Estados Unidos. Además, ostenta una de las escenas culturales más ricas y vibrantes en todo el planeta.
+            <br>
+            Japón ofrece una experiencia única que va más allá de las postales icónicas del monte Fuji y los templos centenarios. Desde las zonas rurales de Hokkaido hasta las playas subtropicales de Okinawa, cada región de Japón tiene su propio encanto y contribuye a la diversidad que caracteriza al país.</p>
+            <br>
+            <img class="texto_img" src="Imagenes/festivales.jpg" alt="Imagen de un festival en Japón"/>
+            <img class="texto_img" src="Imagenes/sakura.jpg" alt="Árbol de Sakura"/>
+            <br>
+            <p class="texto">La gastronomía japonesa, famosa en todo el mundo, es un viaje culinario que va desde el sushi y el ramen hasta los sabores inexplorados del kaiseki. Los mercados callejeros de Osaka y los elegantes restaurantes de Kyoto ofrecen una deliciosa variedad que refleja la meticulosidad y creatividad de la cocina japonesa.</p><img class="texto_img2" src="Imagenes/ramen.jpeg"  width="520px" heigth="480px" alt="Imagen en comida japonesa, Ramen"/>
+            <br>
+            <br>
+            <p class="texto">La meticulosidad y la perfección son valores arraigados en la cultura japonesa, desde la ceremonia del té hasta la precisión de las artes tradicionales como la caligrafía y la ceremonia del ikebana. Al mismo tiempo, la modernidad se manifiesta en la tecnología puntera, los rascacielos futuristas y las subculturas urbanas que definen ciudades como Tokio.
+            <br>
+            Japón es también un destino para los amantes de la naturaleza, con parques nacionales que ofrecen desde exuberantes bosques hasta aguas termales enclavadas en paisajes montañosos. Además, festivales ancestrales como el Hanami (observación de flores de cerezo) y el Gion Matsuri en Kyoto, inyectan vida y color a las estaciones del año.</p>
+            <br>
+
+            <img class="texto_img2" src="Imagenes/panda.jpg" alt="Imagen de un Panda"/>
+            <br>
+            <p class="texto">En "El Sueño Japonés", exploraremos estos aspectos y muchos más, desentrañando las capas de esta nación rica en tradición y a la vanguardia de la innovación. ¡Prepárate para sumergirte en la magia de Japón, donde cada descubrimiento es una puerta a un mundo nuevo y emocionante!
+            </p>
+            </div>
+            <div class="Inicio"> <a class="inicio" href="#Inicio_intro"> volver al inicio </a> <!-- vínculo a la parte superior de la página --></div>
+        </div>       
+    </body>
+</html>
