@@ -1,0 +1,57 @@
+/* Estilo para enlaces no visitados */
+a:link{
+  color:#461818; /* Color del texto para enlaces no visitados */
+}
+
+/* Estilo para enlaces activos (cuando se hace clic) */
+a:active {
+color:#FF0000; /* Color del texto para enlaces activos */
+}
+
+/* Estilos para submenús dentro del menú principal */
+.menu ul ul {
+  z-index: 10; /* Índice de apilamiento para controlar el orden de superposición */
+  display: none; /* Oculta los submenús por defecto */
+  margin-top:10px; /* Espacio superior entre el menú principal y el submenú */
+}
+
+/* Estilos para elementos de lista dentro de los submenús */
+.menu ul ul li { 
+  color:#FDDDDA; /* Color del texto para los elementos de lista en los submenús */
+  z-index: 50; /* Índice de apilamiento para controlar el orden de superposición */
+  display: list-item; /* Muestra los elementos de lista como elementos de lista */
+  text-align:  center; /* Alineación del texto al centro */
+  font-size: 22px; /* Tamaño de fuente para los elementos de lista */
+  width: 130px; /* Ancho de los elementos de lista */
+  background-color: hsla(340, 95%, 50%, 0.4); /* Color de fondo de los elementos de lista */
+  list-style-type: none; /* Elimina los marcadores de lista */
+  margin-top: 4px; /* Espacio superior entre elementos de lista */
+margin-left:0px; /* Espacio izquierdo */
+}
+
+/* Estilo para mostrar los submenús cuando se pasa el cursor sobre los elementos del menú principal */
+.menu li:hover > ul {
+  z-index: 50; /* Índice de apilamiento para controlar el orden de superposición */
+  display: block; /* Muestra los submenús cuando se pasa el cursor sobre los elementos del menú principal */
+}
+
+/* Media query para ajustar los estilos cuando el ancho de la pantalla es <= 1200px */
+@media only screen and (max-width: 1200px) {
+.menu ul ul li {
+  color:#FDDDDA; /* Color del texto para los elementos de lista en los submenús */
+  z-index: 50; /* Índice de apilamiento para controlar el orden de superposición */
+  background-color: hsla(370, 75%, 60%, 0.6); /* Color de fondo de los elementos de lista */
+  font-size: 20px; /* Tamaño de fuente para los elementos de lista */
+  width: 120px; /* Ancho de los elementos de lista */
+}
+}
+
+/* Media query para ajustar los estilos cuando el ancho de la pantalla es <= 800px */
+@media only screen and (max-width: 800px) {
+.menu ul ul li {
+  color:#FDDDDA; /* Color del texto para los elementos de lista en los submenús */
+  z-index: 50; /* Índice de apilamiento para controlar el orden de superposición */
+  font-size: 17px; /* Tamaño de fuente para los elementos de lista */
+  width: 100px; /* Ancho de los elementos de lista */
+}  
+}

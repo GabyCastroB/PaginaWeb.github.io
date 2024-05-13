@@ -1,0 +1,89 @@
+<!doctype html>
+<!-- Ejercicco de pagina web en html con navegación interna
+realizado por Gabriela Maria Castro Beltran de la Universidad Nacional de Colombia-->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta lang="es"><!-- Idioma español-->
+    <title>Página web Gaby</title> <!--Título-->
+    <link href="estilo.css" rel="stylesheet"> <!-- se vincula con el estilo css-->
+    <link rel="stylesheet" type="text/css" href="estilo2.css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+    <script src="acciones.js"></script>
+</head>
+    <body>
+       <header class="claro">
+        <input type="checkbox" id="btn-menu"><!-- checkbox permite la opción boleana ---> 
+         <label for="btn-menu"><img src="imagenes/menu.png" width="30px"></label>
+        <!-- la imagen del ícono se muestra como label del checkbox pero se oculta cuando no se necesita -->
+        <nav class="menu"><!-- menu de navegación o conjunto de botones --> 
+            <ul>
+            <li class="item"><a class="botonMenu" href="index.html" target="_self">Inicio</a></li>
+            <li class="item"><a class="botonMenu"href="Intro.html" target="_self">Introducción</a></li>
+            <li class="item"><a class="botonMenu" href="Historia.html" target="_self">Historia</a>
+                 <ul>
+                    <li class="item2"><a  href="Historia.html" target="_self">Inicios</a></li>
+                    <li class="item2"><a  href="Historia.html" target="_self">Heian</a></li>
+                    <li class="item2"><a  href="Historia.html" target="_self">Edad media</a></li>
+                    <li class="item2" ><a  href="Historia.html" target="_self">Muromachi</a></li>
+                    <li class="item2"><a  href="Historia.html" target="_self">Meji</a></li>
+                    <li class="item2"><a  href="Historia.html" target="_self">Siglo XX</a></li>
+                </ul>
+            </li>
+            <li class="item"><a class="botonMenu" href="Personajes.html" target="_self">Personajes</a>
+                <ul>
+                    <li class="item2"><a  href="Personajes.html" target="_self">Príncipe Shōtoku</a></li>
+                    <li class="item2"><a  href="Personajes.html" target="_self">Oda Nobunaga</a></li>
+                    <li class="item2"><a  href="Personajes.html" target="_self">Toyotomi Hideyoshi</a></li>
+                    <li class="item2"><a  href="Personajes.html" target="_self">Murasaki Shikibu</a></li>
+                </ul>
+            </li>
+            <li class="item"><a class="botonMenu" href="Actividades.html" target="_self">Actividades</a>
+                <ul>
+                    <li class="item2"><a  href="Actividades.html" target="_self">Ryokan</a></li>
+                    <li class="item2"><a  href="Actividades.html" target="_self">Onsen</a></li>
+                    <li class="item2"><a  href="Actividades.html" target="_self">Shukubo</a></li>
+                    <li class="item2"><a  href="Actividades.html" target="_self">Geishas</a></li>
+                </ul>
+            </li> 
+            <li class="item"><a class="botonMenu" href="Ubicacion.html" target="_self">Ubicación</a>
+                <ul>
+                    <li class="item2"><a  href="Ubicacion.html" target="_self">Geografía</a></li>
+                    <li class="item2"><a  href="Ubicacion.html" target="_self">Volcanes y terremotos</a></li>
+                    <li class="item2"><a  href="Ubicacion.html" target="_self">Clima</a></li>
+                   </ul></li>
+            <li class="item"><a class="botonMenu" href="mapa.html" target="_self">Mapa</a> </li>
+            <li class="item"><a class="botonMenu" href="Referencias.html" target="_self">Referencias</a> </li>
+        </ul>
+        </nav>
+        <div class="portada">
+             <h1 > El sueño Japonés &#4326 </h1><!-- titular de mayor tamaño y caracter especial de corazón-->
+            <h2 id="titulo">Aprende un poco más sobre este hermoso lugar</h2>
+        </div>
+        <!--Utiliza un elemento SVG para crear un efecto de onda en la parte inferior del encabezado.-->
+        <div class="estilo_onda"   style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: hsla(250, 0%, 100%,0.4);"></path></svg></div>
+        </header>
+        <div class="Caja_Mod_osc">
+            <span id="boton_os" class="btn-modo-oscuro" onclick="cambiar()"></span>
+        </div>
+        <!--Contiene un párrafo de texto, imágenes y una lista desordenada que describe la temática de "El Sueño Japonés." También incluye enlaces que llevan a diferentes secciones de la página.-->
+        <div class="contenido">
+                <p class="texto">
+                <audio src="imagenes/musicajapon%20.mp3" controls autoplay ></audio><!-- Reproductor de audio con controles básicos que reproduce automáticamente la música -->
+                <img class="texto_img" src="Imagenes/Fuji.jpeg" alt="El monte Fuji"> Bienvenidos a "El Sueño Japonés &#4326", tu ventana a un mundo donde la armonía entre tradición y tecnología redefine lo que significa prosperidad y calidad de vida. Mientras algunos todavía se aferran al mito del "Sueño Americano", sumido en la incertidumbre y la inseguridad, nosotros te invitamos a descubrir por qué el verdadero sueño se encuentra al otro lado del Pacífico.
+                <br>
+                Mientras el sueño americano se desvanece entre sombras de desigualdad y desconfianza, Japón se erige como un faro de cultura, tecnología y respeto. Sumérgete en un viaje donde la tradición se fusiona con la innovación, y donde la seguridad y la serenidad son el telón de fondo de una sociedad en constante evolución.
+                <br>
+                 <img  class="texto_img" src="Imagenes/japon.jpg" alt="..."> Es hora de dejar atrás los estereotipos y explorar un nuevo sueño, uno donde la etiqueta "Made in Japan" va más allá de la calidad de los productos y se convierte en un testimonio de una forma de vida equilibrada y llena de posibilidades. ¡Acompáñanos en este viaje hacia el auténtico "Sueño Japonés"! <a href=http://127.0.0.1:65352/Intro.html target="_blank"> Ver Introducción </a></p>
+                <br>
+                <ul class="texto"><!-- indica una lista en esta celda-->
+                    <br>
+                    <li>En "El Sueño Japonés &#4326", te invitamos a descubrir por qué Japón, con su ubicación privilegiada, se destaca como un faro de inspiración y resiliencia en un mundo en constante cambio. <a href="http://127.0.0.1:65352/Ubicacion.html" target="_blank"> Ver Ubicación </a></li> 
+                    <li>Conoce a los héroes y heroínas que han moldeado el destino de Japón a lo largo de los siglos. Desde valientes samuráis hasta líderes visionarios, exploraremos las vidas y legados de aquellos que han dejado una marca indeleble en la historia japonesa.<a href="http://127.0.0.1:65352/Personajes.html" target="_blank"> Ver Personajes </a></li>
+                    <li>Adéntrate en la belleza del idioma japonés, una herramienta que abre las puertas a la comprensión más profunda de la cultura.<a href="http://127.0.0.1:65352/Actividades.html" target="_blank"> Ver Actividades </a></li>
+                    <li>Sumérgete en las páginas de la historia japonesa, desde sus mitos ancestrales hasta los períodos que han dejado una huella indeleble en su identidad. Descubre cómo Japón ha superado desafíos y evolucionado a lo largo del tiempo, creando una narrativa única y cautivadora.<a href="http://127.0.0.1:65352/Historia.html" target="_blank"> Ver Historia </a> </li></ul>
+            <!-- Proporciona un enlace que lleva de nuevo al inicio de la página.-->
+            <div class="Inicio"> <a class="Inicio" href="#inicio_intro"> volver al inicio </a> <!-- vínculo a la parte superior de la página --></div>
+        </div>
+    </body>
+</html>

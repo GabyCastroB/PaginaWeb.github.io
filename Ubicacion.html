@@ -1,0 +1,121 @@
+<!doctype html>
+<!-- Ejercicco de pagina web en html con navegación interna
+realizado por Gabriela Maria Castro Beltran de la Universidad Nacional de Colombia-->
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta lang="es"><!-- Idioma español-->
+    <title>Ubicación</title> <!--Título-->
+    <link href="estilo.css" rel="stylesheet"> <!-- se vincula con el estilo css-->
+    <link rel="stylesheet" type="text/css" href="estilo2.css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet"> 
+    <script src="acciones.js"></script>
+</head>
+<body>
+   <header class="claro">
+    <input type="checkbox" id="btn-menu"><!-- checkbox permite la opción boleana ---> 
+     <label for="btn-menu"><img src="imagenes/menu.png" width="30px"></label>
+    <!-- la imagen del ícono se muestra como label del checkbox pero se oculta cuando no se necesita -->
+    <nav class="menu"><!-- menu de navegación o conjunto de botones --> 
+        <ul>
+        <li class="item"><a class="botonMenu" href="index.html" target="_self">Inicio</a></li>
+        <li class="item"><a class="botonMenu"href="Intro.html" target="_self">Introducción</a></li>
+        <li class="item"><a class="botonMenu" href="Historia.html" target="_self">Historia</a>
+             <ul>
+                <li class="item2"><a  href="Historia.html" target="_self">Inicios</a></li>
+                <li class="item2"><a  href="Historia.html" target="_self">Heian</a></li>
+                <li class="item2"><a  href="Historia.html" target="_self">Edad media</a></li>
+                <li class="item2" ><a  href="Historia.html" target="_self">Muromachi</a></li>
+                <li class="item2"><a  href="Historia.html" target="_self">Meji</a></li>
+                <li class="item2"><a  href="Historia.html" target="_self">Siglo XX</a></li>
+            </ul>
+        </li>
+        <li class="item"><a class="botonMenu" href="Personajes.html" target="_self">Personajes</a>
+            <ul>
+                <li class="item2"><a  href="Personajes.html" target="_self">Príncipe Shōtoku</a></li>
+                <li class="item2"><a  href="Personajes.html" target="_self">Oda Nobunaga</a></li>
+                <li class="item2"><a  href="Personajes.html" target="_self">Toyotomi Hideyoshi</a></li>
+                <li class="item2"><a  href="Personajes.html" target="_self">Murasaki Shikibu</a></li>
+            </ul>
+        </li>
+        <li class="item"><a class="botonMenu" href="Actividades.html" target="_self">Actividades</a>
+            <ul>
+                <li class="item2"><a  href="Actividades.html" target="_self">Ryokan</a></li>
+                <li class="item2"><a  href="Actividades.html" target="_self">Onsen</a></li>
+                <li class="item2"><a  href="Actividades.html" target="_self">Shukubo</a></li>
+                <li class="item2"><a  href="Actividades.html" target="_self">Geishas</a></li>
+            </ul>
+        </li> 
+        <li class="item"><a class="botonMenu" href="Ubicacion.html" target="_self">Ubicación</a>
+            <ul>
+                <li class="item2"><a  href="Ubicacion.html" target="_self">Geografía</a></li>
+                <li class="item2"><a  href="Ubicacion.html" target="_self">Volcanes y terremotos</a></li>
+                <li class="item2"><a  href="Ubicacion.html" target="_self">Clima</a></li>
+               </ul></li>
+        <li class="item"><a class="botonMenu" href="mapa.html" target="_self">Mapa</a> </li>
+        <li class="item"><a class="botonMenu" href="Referencias.html" target="_self">Referencias</a> </li>
+    </ul>
+    </nav>
+    <div class="portada">
+        <h1 id="titulo">Ubicación</h1>
+    </div>
+    <!--Utiliza un elemento SVG para crear un efecto de onda en la parte inferior del encabezado.-->
+    <div class="estilo_onda"   style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: hsla(250, 0%, 100%,0.4);"></path></svg></div>
+    </header>
+    <div class="Caja_Mod_osc">
+        <span id="boton_os" class="btn-modo-oscuro" onclick="cambiar()"></span>
+    </div>
+        <div class="contenido"> 
+            <!--Contiene un div con la clase "texto_cajita_rosa" que a su vez contiene un párrafo de texto, imágenes y un enlace de regreso.-->
+        <div class="texto_cajita_rosa">
+        <a name="inicio_geografia"></a><!-- crea una marca en un punto de la página -->
+        <h2>Geografía</h2>
+        <h3>Japón:Archipielago del Pacífico</h3>
+        <p class="texto">Japón, una nación asentada en un archipiélago del Pacífico, se configura como un conjunto de islas que conforman un arco en el océano Pacífico, al este del continente asiático. Este país abarca cuatro islas principales: Honshu, Hokkaido, Kyushu y Shikoku. Limita con el Océano Pacífico, el Mar de Okhotsk, el Mar de Japón y el Mar de China Oriental.
+
+        El punto más oriental de Japón es la isla de Minami-Tori Shima (longitud este 153°59'12"), el punto más occidental es la isla de Yonagunijima (longitud este 122°55'57"), el punto más meridional es la isla de Oki-no-Tori Shima (latitud norte 20°25’31") y el punto más septentrional es la isla de Etorofu (latitud norte 45°33’26”).
+        <br>
+        La superficie total del territorio japonés abarca aproximadamente 378,000 kilómetros cuadrados. Honshu, la isla más grande, ocupa alrededor de 228,000 kilómetros cuadrados, situándose como la séptima isla más grande del mundo.
+
+         <img class="texto_img" src="Imagenes/okinawa.jpg" alt="Invierno en Japón"/> La línea costera de Japón exhibe una notable diversidad. En determinadas áreas, como Kujukurihama en la prefectura de Chiba, se extienden extensas playas arenosas, que continúan en tramos rectos y sin interrupciones a lo largo de aproximadamente 60 kilómetros. Por otro lado, la costa de la prefectura de Nagasaki ilustra un paisaje costero compuesto por penínsulas, calas e islotes, como el archipiélago de Goto y las islas de Tsushima e Iki, pertenecientes a dicha prefectura. También es posible encontrar áreas costeras abruptas con numerosos islotes y acantilados pronunciados, resultado de cambios en la línea costera original debido a alteraciones en la corteza terrestre.
+        <br>
+        En lo que respecta a las corrientes oceánicas, destaca la presencia de la cálida corriente de Kuroshio, que fluye desde el nordeste a lo largo de la parte sur del archipiélago japonés. Un brazo de esta corriente, Tsushima, se extiende hasta el Mar de Japón desde la parte oeste del país. Descendiendo desde el norte, la corriente fría Oyashio, también conocida como corriente de Chishima, sigue la costa este, y una de las corrientes que la componen, Liman, penetra en el Mar de Japón desde el norte. La combinación de estas corrientes cálidas y frías estimula la riqueza de recursos pesqueros en las aguas cercanas de Japón.
+        <br>
+        Japón destaca por su geografía montañosa, con aproximadamente dos tercios de su territorio cubiertos por densos bosques. La mayoría de las regiones experimenta un clima templado con cuatro estaciones claramente definidas, aunque en el sur, en Okinawa, se disfruta de un clima subtropical, mientras que en el norte, en Hokkaido, las condiciones son subárticas. Esta variación climática contribuye a la notable diversidad de flora y fauna que se encuentra en el país. Además, Japón cuenta con ecosistemas valiosos, como Shiretoko, Shirakami-Sanchi, las islas Ogasawara y Yakushima, que han sido reconocidos como Patrimonio de la Humanidad por la UNESCO.</p>
+        </div>
+        <div class="texto_cajita_rosa">
+        <a name="inicio_volcanes"></a><!-- crea una marca en un punto de la página -->
+        <h3>Volcanes y terremotos</h3>
+        <p class="texto">Japón presenta una notable actividad volcánica, siendo el cuarto país con mayor cantidad de volcanes activos en el mundo, contabilizando 111 en total, superado únicamente por Estados Unidos, Rusia e Indonesia. A pesar de que la superficie de Japón representa tan solo el 0,25 % del total del planeta, alberga aproximadamente el 7 % de los volcanes activos a nivel global.
+        <br>    
+        El país se encuentra en el "Cinturón de Fuego del Pacífico", una región que rodea el borde del océano Pacífico y que es conocida por su intensa actividad sísmica y volcánica. Esta área concentra numerosas placas tectónicas que interactúan entre sí, lo que lleva a la formación de fallas y zonas de subducción.
+
+        La placa del Pacífico se está moviendo hacia el oeste y se está subduciendo bajo la placa de América del Norte en la fosa de Japón. Esta actividad de subducción es una de las principales razones detrás de los terremotos en Japón. Cuando las placas tectónicas se desplazan, acumulan energía en las fallas geológicas. Cuando esta energía se libera repentinamente, se produce un terremoto.
+        <br>
+        En términos de productos volcánicos, las erupciones japonesas se clasifican en siete categorías: cenizas volcánicas y lapilli, depósitos de cenizas, gases volcánicos, flujos de barro y partículas, flujos de lava, flujos piroclásticos y colapsos del terreno y desprendimientos. Esta diversidad en los tipos de erupciones y productos volcánicos contribuye a la complejidad y riqueza del paisaje geológico de Japón.
+        <br>
+        <img class="texto_img" src="Imagenes/fuji.jpg" alt="Monte Fuji"/> El Monte Fuji es el pico más alto de Japón y una de las icónicas maravillas naturales del país. Este imponente volcán, con una altitud de 3,776.24 metros (12,389 pies), se encuentra en la isla de Honshu, a unos 100 kilómetros al suroeste de Tokio. Es una de las montañas más reconocibles del mundo y ha sido un símbolo cultural y espiritual en la historia de Japón. Es un estratovolcán activo y es parte del Anillo de Fuego del Pacífico, una región con intensa actividad sísmica y volcánica. Aunque sigue siendo considerado activo, su última erupción significativa ocurrió en 1707 durante el período Edo. Desde entonces, el monte Fuji ha sido un destino popular para excursionistas y turistas, y su distintiva forma cónica y su belleza escénica han inspirado numerosas obras de arte y poemas en la cultura japonesa.
+        <br>
+        En 2013, el Monte Fuji fue declarado Patrimonio de la Humanidad por la UNESCO, reconocido por su importancia cultural como símbolo nacional y su impacto en las artes y la espiritualidad japonesa. Muchas personas visitan la región para escalar el Monte Fuji durante la temporada de escalada que generalmente ocurre en verano, buscando experimentar las vistas impresionantes desde su cima y sumergirse en la majestuosidad de este emblemático volcán.</p>
+        </div>
+        <div class="texto_cajita_rosa">
+        <a name="inicio_clima"></a><!-- crea una marca en un punto de la página -->
+        <h2>Clima</h2>
+        <p class="texto">  <img class="texto_img" src="Imagenes/invierno.jpg" alt="Invierno en Japón"/>El clima de Japón se distingue por sus marcados cambios estacionales, influenciados por su ubicación geográfica de norte a sur, abarcando una banda de latitud de aproximadamente 25 grados. Durante el invierno, recibe vientos estacionales de Siberia, mientras que en verano, los vientos provienen del océano Pacífico. A pesar de su superficie relativamente pequeña, Japón exhibe cuatro patrones climáticos distintos.</p>
+            <br>
+        <ul class="texto"><!-- indica una lista en esta celda-->
+            <li>Hokkaido (Patrón Subártico): En esta región, el clima es subártico, con una temperatura media anual de alrededor de 9,45 grados Celsius y una precipitación anual promedio de aproximadamente 1.205 milímetros.
+            <li>Zona Templada (Región de Tohoku hasta Kyushu): Desde la región de Tohoku en el norte de Honshu hasta Kyushu, se experimenta un clima templado. Los veranos son cálidos, influenciados por los vientos estacionales que soplan desde el Pacífico.</li>
+            <li>Región del Mar de Japón: La parte del país que da al Mar de Japón experimenta un clima con abundantes lluvias y nieve. Esto ocurre cuando los vientos fríos y húmedos del continente encuentran las montañas, como los Alpes Japoneses, que actúan como una especie de barrera.</li>
+            <li>Islas del Sudoeste (Okinawa - Clima Subtropical): Las islas del sudoeste, como la prefectura de Okinawa, pertenecen al clima subtropical. Aquí, la temperatura promedio supera los 22 grados Celsius durante el año, acompañada de una precipitación anual de alrededor de 2.000 milímetros.</li></ul>
+        </div>
+        <div class="texto_cajita_rosa">
+        <a name="inicio_mapa"></a><!-- crea una marca en un punto de la página -->
+        <h2>Mapa</h2>
+        <img class="texto_img3" src="Imagenes/mapa.png" alt="Mapa de Japón"/>
+        </div>
+            <div class="Inicio"> <a class="Inicio" href="#inicio_intro"> volver al inicio </a> <!-- vínculo a la parte superior de la página --></div>
+        </div>
+        
+    </body>
+</html>
